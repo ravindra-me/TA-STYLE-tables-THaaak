@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="vidio-bg">
-        <video controls width="100%" preload="auto" autoplay="true" loop="true" muted>
+        <video  width="100%" preload="auto" autoplay="true" loop="true" muted>
             <source src="./assets/gym-video.mp4">
         </video>
         <div class="over-lay"></div>
@@ -283,13 +283,15 @@
             </div>
             <div class="contact-form flex flex-50">
                 <form action="">
-                    <div class="input flex">
-                        <input class="form-control flex-48" type="text" name="name" placeholder="Your Name*" required>
-                        <input class="form-control flex-48" type="email" name="email" placeholder="Your Email*" required>
-                    </div>
-                    <input type="text" name="subject" placeholder="Subject" class="form-control" required>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="form-control" required></textarea>
-                    <button class="btn primary-btn">Send massage</button>
+                    <fieldset>
+                        <div class="input flex">
+                            <input class="form-control flex-48" type="text" name="name" placeholder="Your Name*" required>
+                            <input class="form-control flex-48" type="email" name="email" placeholder="Your Email*" required>
+                        </div>
+                        <input type="text" name="subject" placeholder="Subject" class="form-control" required>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="form-control" required></textarea>
+                        <button class="btn primary-btn">Send massage</button>
+                    </fieldset>
                 </form>
             </div>
         </section>
